@@ -1,10 +1,9 @@
 ﻿using System;
-using log4net;
 using Object = UnityEngine.Object;
 
 namespace log4net.Unity
 {
-    public interface I_IUnityLog : ILog
+    public interface IUnityLog : ILog
     {
         void Debug(string message, Object unityObject, Exception exception);
         void Debug(string message, Object unityObject);

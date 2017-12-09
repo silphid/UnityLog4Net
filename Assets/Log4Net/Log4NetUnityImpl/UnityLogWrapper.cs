@@ -5,7 +5,7 @@ using Object = UnityEngine.Object;
 
 namespace log4net.Unity
 {
-    public class UnityLogWrapper : LogImpl, I_IUnityLog
+    public class UnityLogWrapper : LogImpl, IUnityLog
     {
         public UnityLogWrapper(ILogger log)
             : base(log)
