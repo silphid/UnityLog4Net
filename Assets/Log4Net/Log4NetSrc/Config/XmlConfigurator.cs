@@ -733,7 +733,7 @@ namespace log4net.Config
                     XmlReaderSettings settings = new XmlReaderSettings();
                                         // .NET 4.0 warning CS0618: 'System.Xml.XmlReaderSettings.ProhibitDtd'
                                         // is obsolete: 'Use XmlReaderSettings.DtdProcessing property instead.'
-#if !NET_4_0
+#if !NET_4_6
 					settings.ProhibitDtd = false;
 #else
 					settings.DtdProcessing = DtdProcessing.Parse;
